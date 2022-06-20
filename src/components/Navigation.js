@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Button from './Button';
 import Logo from './Logo';
 
 const Section = styled.section`
@@ -29,7 +29,7 @@ const MenuItem = styled.li`
   color: ${props => props.theme.text};
   cursor: pointer;
 
-  &:after {
+  &::after {
     content: ' ';
     display: block;
     width: 0%;
@@ -38,7 +38,7 @@ const MenuItem = styled.li`
     transition: width 0.3s ease;
   }
 
-  &:hover:after {
+  &:hover::after {
     width: 100%;
   }
 `;
@@ -56,7 +56,7 @@ export default function Navigation() {
           <MenuItem>Team</MenuItem>
           <MenuItem>FAQ</MenuItem>
         </Menu>
-        <h2>Button</h2>
+        <Button text="Connect Wallet" link="https://www.google.com" />
       </Navbar>
     </Section>
   );
