@@ -1,5 +1,6 @@
 import * as React from "react";
 // import DrawSVGPlugin from "gsap-trial/dist/DrawSVGPlugin";
+// https://react-svgr.com/playground/
 
 const Vector = ({ progress = 0, ...props }) => {
 
